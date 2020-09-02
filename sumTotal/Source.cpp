@@ -3,24 +3,29 @@
 
 int main()
 {
-    int i=0, s=0, x ;
+    long int i=0, s=0, x ;
     printf("Enter nuber : ");
     scanf("%d", &x);
     
     while (x==0)
     {
         printf("%d", x);
-
+        return 0;
+    }
+    while (x < 0)
+    {
+        printf("Error");
+        return 0;
     }
     while (x > 0) {
 
-        for (;x>0;) 
+        while (x > 0)
         {
             s += x % 10;
             x = x / 10;
           
         }
-        for (i=0;s>0;) 
+        while (s>0) 
           {
             i += s % 10;
             s = s / 10;
